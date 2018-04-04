@@ -2,14 +2,14 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: [
+    index: [
       'babel-polyfill',
       './src/index.js',
     ],
   },
   output: {
-    path: path.resolve(__dirname, 'dest'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public/dest'),
+    filename: '[name].bundle.js',
   },
   module: {
     loaders: [{
