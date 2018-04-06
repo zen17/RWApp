@@ -6,13 +6,24 @@ export class Login{
         this.email=email;
         this.pass=pass;
     }
-     get(email) {
-         return fetch("http://localhost:3000/users?email="+email
-        )
+    
+loginChech(){
+        let alerthtml=document.getElementById('alerthtml')
+        if(sessionStorage.getItem('email')!=null)
+        {
+            alerthtml.innerHTML="Welcome "+ sessionStorage.getItem('email');
+        }
+        else    
+        {
+            alerthtml.innerHTML="Please login"  
+        }
+}
+get(email) {
+         return fetch("http://localhost:3000/users?email="+email)
     }
 }
-// login-page logic 
 
+// login-page logic 
 let btnsub=document.getElementById('btnsub');
 if(btnsub!=null || btnsub!=undefined){  //provera zato sto ga trazi iz drugi html a tamo nije definisan
 let btnStream=Rx.Observable.fromEvent(btnsub,'click');
@@ -36,3 +47,4 @@ btnStream.subscribe((click)=>{
         }).catch((err)=>{console.log(err)});
     })
 }
+
