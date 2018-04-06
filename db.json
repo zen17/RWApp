@@ -1,14 +1,151 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" },
-      { "id": 2, "title": "gg-server", "author": "typicffode" },
-      { "id": 3, "title": "jssson-server", "author": "ssf" },
-      { "id": 4, "title": "jaason-server", "author": "typfasdicode" }
     ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-
-    
-  }
+  "movies": [
+    {
+      "id": 1,
+      "title": "Rambo",
+      "year": 1984,
+      "score": 4
+    },
+    {
+      "id": 2,
+      "title": "Rocky",
+      "year": 1984,
+      "score": 4
+    },
+    {
+      "id": 3,
+      "title": "Expendables",
+      "year": 1984,
+      "score": 4
+    },
+    {
+      "id": 4,
+      "title": "Mrak film",
+      "year": 1984,
+      "score": 4
+    },
+    {
+      "id": 5,
+      "title": "CLockwork Orange",
+      "year": 1984,
+      "score": 4
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 6
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 7
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 8
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 9
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 10
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 11
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 12
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 13
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 14
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 15
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 16
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 17
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 18
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 19
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 20
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 21
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 22
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 23
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 24
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 25
+    },
+    {
+      "name": "terminator",
+      "imdb": 8.5,
+      "id": 26
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "nemanja",
+      "email": "jocicn17@gmail.com",
+      "password": "nesto"
+    }
+  ],
+  "data":[
+   
+  ]
+}
