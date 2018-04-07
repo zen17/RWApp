@@ -5,9 +5,28 @@
       "name": "nemanja",
       "email": "jocicn17@gmail.com",
       "password": "nesto"
+    },
+    {
+      "email": "aaa",
+      "password": "eee",
+      "id": 2
+    },
+    {
+      "email": "jocicn18@gmail.com",
+      "password": "eee",
+      "id": 3
+    },
+    {
+      "email": "jocicn10@gmail.com",
+      "password": "asdad",
+      "id": 4
+    },
+    {
+      "name": "Pera",
+      "email": "pera@gmail.com",
+      "password": "bla",
+      "id": 5
     }
   ],
-  "data":[
-   
-  ]
+  "data": []
 }
