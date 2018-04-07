@@ -1,5 +1,6 @@
-# Babel Webpack Starter
+# Money Manager
 
+## RWAapp
 
 
 ## Usage
@@ -18,7 +19,7 @@ To serve in the browser  - Runs webpack-dev-server
 ```sh
 $ npm start  
 ```
-### JSON-server localhost:3000
+### JSON-server localhost:3000/db
 ```sh
 $ json-server db.json
 ```
