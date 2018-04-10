@@ -1,7 +1,9 @@
-# Money Manager
+# Babel Webpack Starter
 
-## RWAapp
+A starter pack to build JavaScript applications using standards from ES2015, ES2016 & ES2017. It uses webpack, Babel and webpack-dev-server to compile and serve. It is fully compatible with Async/Await as it uses the Babel polyfill.
 
+### Version
+1.1.0
 
 ## Usage
 
@@ -13,15 +15,11 @@ Install the dependencies
 $ npm install
 ```
 
-### Serve     localhost/8080/public
+### Serve
 To serve in the browser  - Runs webpack-dev-server
 
 ```sh
-$ npm start  
-```
-### JSON-server localhost:3000/db
-```sh
-$ json-server db.json
+$ npm start
 ```
 
 ### Build
@@ -30,3 +28,14 @@ Compile and build
 ```sh
 $ npm run build
 ```
+
+## More Info
+
+### Author
+
+Brad Traversy
+[Traversy Media](http://www.traversymedia.com)
+
+### License
+
+This project is licensed under the MIT License

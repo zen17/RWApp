@@ -16,8 +16,7 @@ loginCheck(){
         if(alerthtml!=undefined && alerthtml!=null){
         if(sessionStorage.getItem('email')!=null )
         {
-            alerthtml.innerHTML="Welcome "+ sessionStorage.getItem('name');  
-
+            alerthtml.innerHTML="Welcome "+ sessionStorage.getItem('name');
         }
         else    
         {
@@ -32,7 +31,7 @@ get(email) {
 
 
 
-// login-page logic c
+// login-page logic 
 let btnsub=document.getElementById('btnsub');
 if(btnsub!=null || btnsub!=undefined){  //provera zato sto ga trazi iz drugi html a tamo nije definisan
 let btnStream=Rx.Observable.fromEvent(btnsub,'click');
@@ -47,7 +46,7 @@ btnStream.subscribe((click)=>{
             if(data[0].email==email.value && data[0].password==pass.value)
             {
                 sessionStorage.setItem("email", data[0].email);
-                sessionStorage.setItem("password",data[0].password);
+                sessionStorage.setItem("id",data[0].id);
                 sessionStorage.setItem("name",data[0].name);
                 window.location.href="http://localhost:8080/public";
             }

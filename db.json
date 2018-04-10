@@ -7,26 +7,118 @@
       "password": "nesto"
     },
     {
-      "email": "aaa",
-      "password": "eee",
-      "id": 2
+      "expense": "1111",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 8
     },
     {
-      "email": "jocicn18@gmail.com",
-      "password": "eee",
-      "id": 3
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 9
     },
     {
-      "email": "jocicn10@gmail.com",
-      "password": "asdad",
-      "id": 4
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 10
     },
     {
-      "name": "Pera",
-      "email": "pera@gmail.com",
-      "password": "bla",
-      "id": 5
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 11
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 12
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 13
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 14
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 15
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 16
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 17
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 18
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 19
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 20
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 21
+    },
+    {
+      "expense": "2222",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 22
     }
   ],
-  "data": []
+  "data": [
+    {
+      "expense": "1111",
+      "expenseName": "voda",
+      "date": "03/28/2018",
+      "kljuc": "1",
+      "id": 8
+    }
+  ]
 }
