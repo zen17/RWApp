@@ -21,4 +21,8 @@ Compile and build
 ```
  npm run build
 ```
-
+### Try app
+```
+email:user@gmail.com
+pass:user
+```

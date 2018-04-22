@@ -1,8 +1,10 @@
 export class JSONmanager{
     constructor(){}
-    get(url){}
+    get(url){
+      return  fetch(url)
+    }
     post(url,obj){
-        fetch("http://localhost:3000/users",{
+      return  fetch(url,{
             method:'POST',
             headers:{
                 'Accept': 'application/json, text/plain, */*',

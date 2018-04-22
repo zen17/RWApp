@@ -11,7 +11,6 @@ export class Login{
         window.location='http://localhost:8080/public/login.html';
     }
 loginCheck(){
-    
         let alerthtml=document.getElementById('alerthtml')
         if(alerthtml!=undefined && alerthtml!=null){
         if(sessionStorage.getItem('email')!=null )
@@ -28,15 +27,16 @@ get(email) {
          return fetch("http://localhost:3000/users?email="+email)
     }
 }
-
-
-
-// login-page logic 
+//## login-page logic ##
 let btnsub=document.getElementById('btnsub');
-if(btnsub!=null || btnsub!=undefined){  //provera zato sto ga trazi iz drugi html a tamo nije definisan
-let btnStream=Rx.Observable.fromEvent(btnsub,'click');
-
-btnStream.subscribe((click)=>{
+ //## provera zato sto ga trazi iz drugi html a tamo nije definisan##
+if(btnsub!=null || btnsub!=undefined){ 
+let btnStream$=Rx.Observable.fromEvent(btnsub,'click');
+//## aktiviranje logovanja samo preko entera##
+let enterStream$=Rx.Observable.fromEvent(document,'keyup').filter(data=>data.keyCode===13); 
+//## spajnaje stream-a (aktiviranje logovanja preko entera)
+let inStream=Rx.Observable.merge(btnStream$,enterStream$);
+inStream.subscribe((click)=>{
     let email=document.getElementById('emailInput');
     let pass=document.getElementById('passwordInput');
     let obj=new Login(email.value,pass.value);

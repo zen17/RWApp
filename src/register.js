@@ -3,7 +3,9 @@ export class RegisterManager{
     constructor(){
     }
     register(n,e,p){
-        let obj=JSON.stringify({name:n,email:e,password:p})
+        console.log(n,p,e)
+        let obj=JSON.stringify({name:n,email:e,password:p});
+        if(check(n,e,p)){
         fetch("http://localhost:3000/users?email="+e)
         .then(res=>{ return res.json()})
         .then(data=>{        
@@ -27,19 +29,31 @@ export class RegisterManager{
         })
         .catch(err=>{console.log(err)})
     }
+    else{
+        alert("Popunite sva polja");
+    }
+    }
 }
 
-let btnRegStream=document.getElementById("btnreg")
-if(btnRegStream!=null && btnRegStream!=undefined)
+let btnReg=document.getElementById("btnreg")
+if(btnReg!=null || btnReg!=undefined)
 {
-    let email=document.getElementById('emailReg');
-    let password=document.getElementById('passwordReg')
-    let name=document.getElementById('nameReg');
-    Rx.Observable.fromEvent(btnRegStream,'click')
+    let btnRegStream$=Rx.Observable.fromEvent(btnReg,'click');
+    let enterStream$=Rx.Observable.fromEvent(document,'keyup').filter(data=>data.keyCode===13);
+    let inStream$=Rx.Observable.merge(btnRegStream$,enterStream$)
     .subscribe((data)=>{
+        let email=document.getElementById('emailReg');
+        let password=document.getElementById('passwordReg')
+        let name=document.getElementById('nameReg');
         let reg=new RegisterManager();
         reg.register(name.value,email.value,password.value);
      })
     
 } 
 
+function check(n,e,p){
+    if(n!="" && e!="" && p!="" )
+    return true
+    else
+    return false
+}

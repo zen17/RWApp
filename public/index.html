@@ -36,14 +36,14 @@
 
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 
+    <script>
+         if(sessionStorage.getItem('email')==null )
+          window.location='http://localhost:8080/public/login.html';
+    </script>
+
+   
 </head>
 <body>
-
-
-        <!-- Left Panel -->
-
-  
-
     <!-- Left Panel -->
 
     <!-- Right Panel -->
@@ -54,7 +54,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Money manager</h1>
+                        <h1>Troško</h1>
                     </div>
                 </div>
             </div>
@@ -62,97 +62,55 @@
                     <div class="page-header float-right">
                             <div class="user-area dropdown float-right">
                                 <br>
-                                  <button  id="loginReg" type="button" class="btn btn-outline-secondary">Logout</button>     
-                                </div>
+                                  <button  id="loginReg" type="button" class="btn btn-outline-secondary">Odjavi se</button>     
+                           </div>
                     </div>
                 </div>
-
         <div class="content mt-3">
-
             <div class="col-sm-12">
                 <div id='alerthtml' class="alert  alert-success alert-dismissible fade show" role="alert">
-                   
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
             </div>
-           <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-1">
-                    <div class="card-body pb-0">
-                       
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Line </p>
-
-                        
-
-                    </div>
-
-                </div>
-            </div>
-            <!--/.col-->
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-2">
-                    <div class="card-body pb-0">
-                        
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Members online</p>
-
-                       
-
-                    </div>
-                </div>
-            </div>
-            <!--/.col-->
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-3">
-                    <div class="card-body pb-0">
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Members online</p>
-                    </div>
-                </div>
-            </div>
-            <!--/.col-->
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-4">
-                    <div class="card-body pb-0">
-                       
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Members online</p>
-                    </div>
-                </div>
-            </div>
+          
             <!--/.col-->
            <div class="col-lg-6">
             <div id="pay-invoice">
                 <div class="card-body">
                     <div class="card-title">
-                        <h3 >Add expenses in dolars $</h3>
+                        <h3 >Evidentiraj troškove</h3>
                     </div>
                     <hr>
                         <div class="form-group has-success">
-                        <label for="cc-name" class="control-label mb-1">Type value expenses</label>
+                        <label for="cc-name" class="control-label mb-1">Unesi vrednost u dinarima</label>
                         <input id="expenses" name="cc-name" type="number" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the expense" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
-                        <label for="cc-name" class="control-label mb-1">Name of expense</label>
+                        
+                          <label for="cc-name" class="control-label mb-1">Izaberite kategoriju troska</label>
+                            <select name="select" id="select" class="form-control">
+                              <option value="0">Please select</option>
+                              <option value="domacinstvo">Domacinstvo </option>
+                              <option value="putovanje">Putovanje </option>
+                              <option value="hrana">Hrana </option>
+                              <option value="odeca">Odeca </option>
+                              <option value="zabava">Zabava i relaksacija </option>
+                              <option value="stanarina">Stanarina </option>
+                              <option value="obuca">Obuca</option>
+                              <option value="tehnika">Tehnika </option>
+                              <option value="gorivo">Gorivo </option>
+                              <option value="ostalo">Ostalo </option>
+                            </select>
+                            <label for="cc-name" class="control-label mb-1">Opis troška</label>
                           <input id="name-of-expenses" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name expense" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
                           <label for="cc-name" class="control-label mb-1">Date</label>
-                            <input id="datum" class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-                            <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+                          <input id="datum" class="form-control" id="date" name="date" value="" type="text"/>
+                          <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
                         </div>
                         <div>
                             <button id="submit-button" type="submit" class="btn btn-lg btn-info btn-block">
-                                <i class="fa fa-lock fa-lg"></i>&nbsp;
-                                <span id="payment-button-amount">Submit expenses </span>
+                              
+                                <span id="submit-button">Prosledi podatke </span>
                                 <span id="payment-button-sending" style="display:none;">Sending…</span>
                             </button>
                         </div>
@@ -166,23 +124,35 @@
                         <div class="stat-widget-one">
                             <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
                             <div class="stat-content dib">
-                                <div class="stat-text">Total Profit</div>
-                                <div class="stat-digit">1,012</div>
+                                <div class="stat-text">Ukupno potroseno ovog meseca </div>
+                                <div id="widget1" class="stat-digit">1</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
+            <div class="col-xl-3 col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="stat-widget-one">
+                                <div class="stat-icon dib"><i class="ti-stats-up text-muted"></i></div>
+                                <div class="stat-content dib">
+                                    <div class="stat-text">Ukupnp potroseno ove godine</div>
+                                    <div id="widget2" class="stat-digit">1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="col-xl-3 col-lg-6">
                 <div class="card">
                     <div class="card-body">
                         <div class="stat-widget-one">
-                            <div class="stat-icon dib"><i class="ti-user text-primary border-primary"></i></div>
+                            <div class="stat-icon dib"><i class="fa fa-pie-chart"></i></div>
                             <div class="stat-content dib">
-                                <div class="stat-text">New Customer</div>
-                                <div class="stat-digit">961</div>
+                                <div class="stat-text">Ukupno potroseno ove nedelje </div>
+                                <div id="widget3" class="stat-digit">1</div>
                             </div>
                         </div>
                     </div>
@@ -195,25 +165,33 @@
                         <div class="stat-widget-one">
                             <div class="stat-icon dib"><i class="ti-layout-grid2 text-warning border-warning"></i></div>
                             <div class="stat-content dib">
-                                <div class="stat-text">Active Projects</div>
-                                <div class="stat-digit">770</div>
+                                <div class="stat-text">Najskuplje od troskova</div>
+                                <div id="widget4" class="stat-digit">1</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="breadcrumbs">
-                    <div class="card" >
-                            <h4 class="mb-0">
-                                    <span class="count">Mesecni troskovi</span>
-                             </h4>
-                            <canvas id="myChartPie" width="410" height="170"></canvas>
-                    </div>
+                    
                 <div class="card" >
-                        <canvas id="myChartLine" width="410" height="140"></canvas>
+                        <h4 class="mb-0">
+                                <span class="count">Mesecni troskovi</span>
+                         </h4>
+                        <canvas id="myChartLine" width="410" height="120"></canvas>
+                </div>
+
+                <div class="card" >
+                        <h4 class="mb-0">
+                                <span class="count">Troskovi po mesecima</span>
+                         </h4>
+                        <canvas id="myChartBar" width="410" height="120"></canvas>
                 </div>
                 <div class="card" >
-                        <canvas id="myChartBar" width="410" height="140"></canvas>
+                        <h4 class="mb-0">
+                                <span class="count">Odnos troskova</span>
+                         </h4>
+                        <canvas id="myChartPie" width="410" height="120"></canvas>
                 </div>
                 
                 <!-- /# card -->
@@ -238,17 +216,6 @@
     <!-- Right Panel -->
 
     <script src="/dest/bundle.js"></script>
-    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-
-
-    <script src="assets/js/dashboard.js"></script>
-
-    <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
-   
+    
 </body>
 </html>

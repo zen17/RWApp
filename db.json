@@ -1,124 +1,76 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "nemanja",
-      "email": "jocicn17@gmail.com",
-      "password": "nesto"
-    },
-    {
-      "expense": "1111",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 8
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 9
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 10
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 11
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 12
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 13
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 14
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 15
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 16
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 17
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 18
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 19
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 20
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 21
-    },
-    {
-      "expense": "2222",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
-      "id": 22
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "user",
+      "id": 6
     }
   ],
   "data": [
     {
-      "expense": "1111",
-      "expenseName": "voda",
-      "date": "03/28/2018",
-      "kljuc": "1",
+      "expense": "10000",
+      "expenseName": "patike",
+      "date": "04/11/2018",
+      "expenseGroup": "obuca",
+      "kljuc": "6",
+      "id": 3
+    },
+    {
+      "expense": "2000",
+      "expenseName": "struja",
+      "date": "04/28/2018",
+      "expenseGroup": "domacinstvo",
+      "kljuc": "6",
+      "id": 4
+    },
+    {
+      "expense": "3000",
+      "expenseName": "internet",
+      "date": "04/27/2018",
+      "expenseGroup": "domacinstvo",
+      "kljuc": "6",
+      "id": 5
+    },
+    {
+      "expense": "500",
+      "expenseName": "spagete",
+      "date": "04/16/2018",
+      "expenseGroup": "hrana",
+      "kljuc": "6",
+      "id": 6
+    },
+    {
+      "expense": "300",
+      "expenseName": "struja",
+      "date": "04/17/2018",
+      "expenseGroup": "stanarina",
+      "kljuc": "6",
+      "id": 7
+    },
+    {
+      "expense": "7000",
+      "expenseName": "stanarina",
+      "date": "04/09/2018",
+      "expenseGroup": "ostalo",
+      "kljuc": "6",
       "id": 8
+    },
+    {
+      "expense": "4000",
+      "expenseName": "patike",
+      "date": "04/07/2018",
+      "expenseGroup": "odeca",
+      "kljuc": "6",
+      "id": 9
+    },
+    {
+      "expense": "1000",
+      "expenseName": "nesto",
+      "date": "04/21/2018",
+      "expenseGroup": "ostalo",
+      "kljuc": "6",
+      "id": 10
     }
   ]
 }
