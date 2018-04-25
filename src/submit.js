@@ -1,6 +1,11 @@
 import {JSONmanager} from "./json-manager"
 import Rx from 'rxjs'
 import {ChartManager} from "./chart-manager"
+import {WidgetManager} from './widget-manager.js'
+
+let ctxLine = document.getElementById("myChartLine");
+let ctxPie = document.getElementById("myChartPie");
+let ctxBar = document.getElementById("myChartBar");
 
 let submitBtn=document.getElementById('submit-button');
 if(submitBtn!=null)
@@ -22,8 +27,18 @@ if(submitBtn!=null)
         })
         console.log(obj)
      let json_manager=new JSONmanager();
-     console.log("moj Promise")
-     json_manager.post("http://localhost:3000/data",obj);
+     json_manager.post("http://localhost:3000/data",obj)
+     .then(data=>{
+        fetch("http://localhost:3000/data?kljuc="+sessionStorage.getItem('id'))
+        .then(data=>data.json())
+        .then(data=>{
+            let chartManager= new ChartManager();
+            chartManager.drawCharts(ctxLine,ctxPie,ctxBar);
+            let  widgetManager=new WidgetManager();
+            widgetManager.drawWidget();
+
+        })
+     })
      tbxNameOfExpenses.value="" ;
      tbxValue.value="";
      datum.value="" ;

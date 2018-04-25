@@ -17,60 +17,28 @@
       "id": 3
     },
     {
-      "expense": "2000",
-      "expenseName": "struja",
-      "date": "04/28/2018",
-      "expenseGroup": "domacinstvo",
+      "expense": "2500",
+      "expenseName": "trenerka",
+      "date": "04/09/2018",
+      "expenseGroup": "odeca",
       "kljuc": "6",
       "id": 4
     },
     {
-      "expense": "3000",
-      "expenseName": "internet",
-      "date": "04/27/2018",
-      "expenseGroup": "domacinstvo",
+      "expense": "5000",
+      "expenseName": "patike",
+      "date": "04/13/2018",
+      "expenseGroup": "obuca",
       "kljuc": "6",
       "id": 5
     },
     {
-      "expense": "500",
-      "expenseName": "spagete",
-      "date": "04/16/2018",
-      "expenseGroup": "hrana",
-      "kljuc": "6",
-      "id": 6
-    },
-    {
-      "expense": "300",
-      "expenseName": "struja",
-      "date": "04/17/2018",
-      "expenseGroup": "stanarina",
-      "kljuc": "6",
-      "id": 7
-    },
-    {
       "expense": "7000",
       "expenseName": "stanarina",
-      "date": "04/09/2018",
-      "expenseGroup": "ostalo",
+      "date": "04/28/2018",
+      "expenseGroup": "stanarina",
       "kljuc": "6",
-      "id": 8
-    },
-    {
-      "expense": "4000",
-      "expenseName": "patike",
-      "date": "04/07/2018",
-      "expenseGroup": "odeca",
-      "kljuc": "6",
-      "id": 9
-    },
-    {
-      "expense": "1000",
-      "expenseName": "nesto",
-      "date": "04/21/2018",
-      "expenseGroup": "ostalo",
-      "kljuc": "6",
-      "id": 10
+      "id": 6
     }
   ]
 }
