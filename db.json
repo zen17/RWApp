@@ -39,6 +39,14 @@
       "expenseGroup": "stanarina",
       "kljuc": "6",
       "id": 6
+    },
+    {
+      "expense": "9000",
+      "expenseName": "ostalo",
+      "date": "04/01/2018",
+      "expenseGroup": "ostalo",
+      "kljuc": "6",
+      "id": 7
     }
   ]
 }
