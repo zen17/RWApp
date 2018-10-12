@@ -1,7 +1,5 @@
 # Money Manager
 
-![](video.gif)
-
 ## RWAapp
  	 
  	 
