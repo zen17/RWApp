@@ -47,6 +47,22 @@
       "expenseGroup": "ostalo",
       "kljuc": "6",
       "id": 7
+    },
+    {
+      "expense": "15000",
+      "expenseName": "sladoled",
+      "date": "08/19/2018",
+      "expenseGroup": "hrana",
+      "kljuc": "6",
+      "id": 8
+    },
+    {
+      "expense": "20000",
+      "expenseName": "grcka",
+      "date": "10/13/2018",
+      "expenseGroup": "putovanje",
+      "kljuc": "6",
+      "id": 9
     }
   ]
 }

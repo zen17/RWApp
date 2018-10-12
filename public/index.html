@@ -2,21 +2,25 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RWApp</title>
- 
-  <!--  jQuery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <!--  jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-<!-- Bootstrap Date-Picker Plugin -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-icon.png">
@@ -37,12 +41,13 @@
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 
     <script>
-         if(sessionStorage.getItem('email')==null )
-          window.location='http://localhost:8080/public/login.html';
+        if (sessionStorage.getItem('email') == null)
+            window.location = 'http://localhost:8080/public/login.html';
     </script>
 
-   
+
 </head>
+
 <body>
     <!-- Left Panel -->
 
@@ -60,84 +65,90 @@
                 </div>
             </div>
             <div class="col-sm-8">
-                    <div class="page-header float-right">
-                            <div class="user-area dropdown float-right">
-                                <br>
-                                  <button  id="loginReg" type="button" class="btn btn-outline-secondary">Odjavi se</button>     
-                           </div>
+                <div class="page-header float-right">
+                    <div class="user-area dropdown float-right">
+                        <br>
+                        <button id="loginReg" type="button" class="btn btn-outline-secondary">Odjavi se</button>
                     </div>
                 </div>
-        <div class="content mt-3">
-            <div class="col-sm-12">
-                <div id='alerthtml' class="alert  alert-success alert-dismissible fade show" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
             </div>
-          
-            <!--/.col-->
-           <div class="col-lg-6">
-            <div id="pay-invoice">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h3 >Evidentiraj troškove</h3>
+            <div class="content mt-3">
+                <div class="col-sm-12">
+                    <div id='alerthtml' class="alert  alert-success alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <hr>
-                        <div class="form-group has-success">
-                        <label for="cc-name" class="control-label mb-1">Unesi vrednost u dinarima</label>
-                        <input id="expenses" name="cc-name" type="number" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the expense" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
-                        
-                          <label for="cc-name" class="control-label mb-1">Izaberite kategoriju troska</label>
-                            <select name="select" id="select" class="form-control">
-                              <option value="0">Please select</option>
-                              <option value="domacinstvo">Domacinstvo </option>
-                              <option value="putovanje">Putovanje </option>
-                              <option value="hrana">Hrana </option>
-                              <option value="odeca">Odeca </option>
-                              <option value="zabava">Zabava i relaksacija </option>
-                              <option value="stanarina">Stanarina </option>
-                              <option value="obuca">Obuca</option>
-                              <option value="tehnika">Tehnika </option>
-                              <option value="gorivo">Gorivo </option>
-                              <option value="ostalo">Ostalo </option>
-                            </select>
-                            <label for="cc-name" class="control-label mb-1">Opis troška</label>
-                          <input id="name-of-expenses" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name expense" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
-                          <label for="cc-name" class="control-label mb-1">Date</label>
-                          <input id="datum" class="form-control" id="date" name="date" value="" type="text"/>
-                          <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
-                        </div>
-                        <div>
-                            <button id="submit-button" type="submit" class="btn btn-lg btn-info btn-block">
-                              
-                                <span id="submit-button">Prosledi podatke </span>
-                                <span id="payment-button-sending" style="display:none;">Sending…</span>
-                            </button>
-                        </div>
                 </div>
-            </div>
-            </div> 
-            
-            <div class="col-xl-3 col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="stat-widget-one">
-                            <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
-                            <div class="stat-content dib">
-                                <div class="stat-text">Ukupno potroseno ovog meseca </div>
-                                <div id="widget1" class="stat-digit">1</div>
+
+                <!--/.col-->
+                <div class="col-lg-6">
+                    <div id="pay-invoice">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Evidentiraj troškove</h3>
+                            </div>
+                            <hr>
+                            <div class="form-group has-success">
+                                <label for="cc-name" class="control-label mb-1">Unesi vrednost u dinarima</label>
+                                <input id="expenses" name="cc-name" type="number" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the expense"
+                                    autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
+
+                                <label for="cc-name" class="control-label mb-1">Izaberite kategoriju troska</label>
+                                <select name="select" id="select" class="form-control">
+                                    <option value="0">Please select</option>
+                                    <option value="domacinstvo">Domacinstvo </option>
+                                    <option value="putovanje">Putovanje </option>
+                                    <option value="hrana">Hrana </option>
+                                    <option value="odeca">Odeca </option>
+                                    <option value="zabava">Zabava i relaksacija </option>
+                                    <option value="stanarina">Stanarina </option>
+                                    <option value="obuca">Obuca</option>
+                                    <option value="tehnika">Tehnika </option>
+                                    <option value="gorivo">Gorivo </option>
+                                    <option value="ostalo">Ostalo </option>
+                                </select>
+                                <label for="cc-name" class="control-label mb-1">Opis troška</label>
+                                <input id="name-of-expenses" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name expense"
+                                    autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
+                                <label for="cc-name" class="control-label mb-1">Date</label>
+                                <input id="datum" class="form-control" id="date" name="date" value="" type="text" />
+                                <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+                            </div>
+                            <div>
+                                <button id="submit-button" type="submit" class="btn btn-lg btn-info btn-block">
+
+                                    <span id="submit-button">Prosledi podatke </span>
+                                    <span id="payment-button-sending" style="display:none;">Sending…</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6">
                     <div class="card">
                         <div class="card-body">
                             <div class="stat-widget-one">
-                                <div class="stat-icon dib"><i class="ti-stats-up text-muted"></i></div>
+                                <div class="stat-icon dib">
+                                    <i class="ti-money text-success border-success"></i>
+                                </div>
+                                <div class="stat-content dib">
+                                    <div class="stat-text">Ukupno potroseno ovog meseca </div>
+                                    <div id="widget1" class="stat-digit">1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="stat-widget-one">
+                                <div class="stat-icon dib">
+                                    <i class="ti-stats-up text-muted"></i>
+                                </div>
                                 <div class="stat-content dib">
                                     <div class="stat-text">Ukupnp potroseno ove godine</div>
                                     <div id="widget2" class="stat-digit">1</div>
@@ -146,77 +157,84 @@
                         </div>
                     </div>
                 </div>
-            <div class="col-xl-3 col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="stat-widget-one">
-                            <div class="stat-icon dib"><i class="fa fa-pie-chart"></i></div>
-                            <div class="stat-content dib">
-                                <div class="stat-text">Ukupno potroseno ove nedelje </div>
-                                <div id="widget3" class="stat-digit">1</div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="stat-widget-one">
+                                <div class="stat-icon dib">
+                                    <i class="fa fa-pie-chart"></i>
+                                </div>
+                                <div class="stat-content dib">
+                                    <div class="stat-text">Ukupno potroseno ove nedelje </div>
+                                    <div id="widget3" class="stat-digit">1</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xl-3 col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="stat-widget-one">
-                            <div class="stat-icon dib"><i class="ti-layout-grid2 text-warning border-warning"></i></div>
-                            <div class="stat-content dib">
-                                <div class="stat-text">Najskuplje od troskova</div>
-                                <div id="widget4" class="stat-digit">1</div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="stat-widget-one">
+                                <div class="stat-icon dib">
+                                    <i class="ti-layout-grid2 text-warning border-warning"></i>
+                                </div>
+                                <div class="stat-content dib">
+                                    <div class="stat-text">Najskuplje od troskova</div>
+                                    <div id="widget4" class="stat-digit">1</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="breadcrumbs">
-                    
-                <div class="card" >
+                <div class="breadcrumbs">
+
+                    <div class="card">
                         <h4 class="mb-0">
-                                <span class="count">Mesecni troskovi</span>
-                         </h4>
+                            <span class="count">Mesecni troskovi</span>
+                        </h4>
                         <canvas id="myChartLine" width="410" height="120"></canvas>
-                </div>
+                    </div>
 
-                <div class="card" >
+                    <div class="card">
                         <h4 class="mb-0">
-                                <span class="count">Troskovi po mesecima</span>
-                         </h4>
+                            <span class="count">Troskovi po mesecima</span>
+                        </h4>
                         <canvas id="myChartBar" width="410" height="120"></canvas>
-                </div>
-                <div class="card" >
+                    </div>
+                    <div class="card">
                         <h4 class="mb-0">
-                                <span class="count">Odnos troskova</span>
-                         </h4>
+                            <span class="count">Odnos troskova</span>
+                        </h4>
                         <canvas id="myChartPie" width="410" height="120"></canvas>
+                    </div>
+
+                    <!-- /# card -->
                 </div>
-                
-                <!-- /# card -->
             </div>
-        </div> <!-- .content -->
-    </div><!-- /#right-panel -->
+            <!-- .content -->
+        </div>
+        <!-- /#right-panel -->
 
 
-    <script>
-        $(document).ready(function(){
-          var date_input=$('input[name="date"]'); //our date input has the name "date"
-          var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-          var options={
-            format: 'mm/dd/yyyy',
-            container: container,
-            todayHighlight: true,
-            autoclose: true,
-          };
-          date_input.datepicker(options);
-        })
-    </script>
-    <!-- Right Panel -->
+        <script>
+            $(document).ready(function () {
+                var date_input = $('input[name="date"]'); //our date input has the name "date"
+                var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+                var options = {
+                    format: 'mm/dd/yyyy',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true,
+                };
+                date_input.datepicker(options);
+            })
+        </script>
+        <!-- Right Panel -->
 
-    <script src="/dest/bundle.js"></script>
-    
+        <script src="/dest/bundle.js"></script>
+
 </body>
+
 </html>
